@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    
+    <Header/>
+    <Main/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
@@ -13,7 +14,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: "App",
   components: {
-    // HelloWorld,
     Header,
     Main,
     Footer,
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~bootstrap/scss/bootstrap';
+@import "./assets/scss/style.scss";
 
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
