@@ -68,7 +68,7 @@
             </div>
         </section>
         <!-- Testimonials -->
-        <section class="testimonials container">
+        <section class="testimonials container py-5">
             <div class="row">
                 <div class="col-6">
                     <h2 class="fontNewYorkTimes">What The Crities Say</h2>
@@ -127,6 +127,84 @@
                 </div>
             </div>
         </section>
+        <!-- events -->
+        <section class="events py-5 store">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="fontNewYorkTimes">Upcoming Events</h2>
+                        <p class="uppercase saffron">meet the author in person</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4 text-center my_card p-3">
+                        <div>
+                            <img class="w-100" src="../assets/img/event-05-400x240.jpg" alt="">
+                        </div>
+                        <div class="bg-light p-2">
+                            <h4 class="p-3 eventTitle">Chicago Book Signing</h4>
+                            <div class="hr"></div>
+                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center my_card p-3">
+                        <div>
+                            <img class="w-100" src="../assets/img/event-04-400x240.jpg" alt="">
+                        </div>
+                        <div class="bg-light p-2">
+                            <h4 class="p-3 eventTitle">Met &amp; Greet With Amanda</h4>
+                            <div class="hr"></div>
+                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-4 text-center my_card p-3">
+                        <div>
+                            <img class="w-100" src="../assets/img/event-07-400x240.jpg" alt="">
+                        </div>
+                        <div class="bg-light p-2">
+                            <h4 class="p-3 eventTitle">Open Book: Dialogues</h4>
+                            <div class="hr"></div>
+                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- jumbo Subscriber -->
+        <section class="jumbotronSub">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-5 text-center subscriberPadding">
+                        <h2 class="fs-1 fontNewYorkTimes text-light">Subscribe To My Newsletter</h2>
+                        <p class="saffron text-uppercase">be notified about book signing tour dates</p>
+                        <form action="">
+                            <input class="me-1" type="text" placeholder="Insert your email _ *">
+                            <button type="button" class="btn btn-success ms-1 px-4">Subscribe</button>
+                        </form>
+                        <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolore possimus optio fugit ipsa quia libero voluptas earum.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- more info -->
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h2 class="fontNewYorkTimes">Dig A Little Deeper Into Damo Vaughn</h2>
+                    <p class="text-uppercase">find out more about the author himself</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div>
+                            <img src="../assets/img/box-1.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -138,6 +216,9 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/style.scss";
+    .saffron {
+        color: $saffron;
+    }
     .grey {
         color: $suvaGray;
     }
@@ -174,9 +255,7 @@ export default {
         .suvaGray {
             color: $suvaGray;
         }
-        .saffron {
-            color: $saffron;
-        }
+        
         .text-jumbo {
             display: flex;
             align-items: center;
@@ -201,6 +280,24 @@ export default {
             width: 90%;
             top: 100px;
             left: 15px;
+        }
+    }
+    .events {
+        .my_card {
+            border: none;
+        }
+
+        .hr {
+            width: 70%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.452);
+            margin: auto;
+        }
+    }
+    .jumbotronSub {
+        background-image: url(../assets/img/banner-2.jpg);
+        .subscriberPadding {
+            padding: 7em 0;
         }
     }
 </style>
