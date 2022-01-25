@@ -189,7 +189,7 @@
             </div>
         </section>
         <!-- more info -->
-        <section class="info container">
+        <section class="info container py-5">
             <div class="row">
                 <div class="col text-center py-5">
                     <h2 class="fontNewYorkTimes">Dig A Little Deeper Into Damo Vaughn</h2>
@@ -235,6 +235,52 @@
                 </div>
             </div>
         </section>
+        <!-- last articles -->
+        <section class="lastArticles store py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="fontNewYorkTimes">Recent Atricles</h2>
+                        <p class="text-uppercase text-lagoon">read the latest entries</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn btn-warning text-light px-5">All Articles</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 bg-light">
+                        <div class="p-4">
+                            <div class="img-lastArticles"></div>
+                        </div>
+                        <div class="p-5 ">
+                            <h5>20 Creativity Tips</h5>
+                            <p class="smallSize pb-2 grey">By <strong>admin</strong> | October 24th, 2019 | Categories: <strong>Event, Tips &amp; Tricks</strong></p>
+                            <p class="fs-5 grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro adipisci iure. Temporibus aliquid quis sequi voluptatem quod fugiat id natus.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 bg-light">
+                        <div class="">
+                            <div class="p-4">
+                                <div class="img-booklist"></div>
+                            </div>
+                            <div class="px-4">
+                                <h5>What's On Your Booklist?</h5>
+                                <p class="smallSize pb-2 grey">By <strong>admin</strong> | October 24th, 2019 | <strong>0 Comments</strong></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="p-4">
+                                <div class="img-travel"></div>
+                            </div>
+                            <div class="px-4">
+                                <h5>Instabul Travel Guide</h5>
+                                <p class="smallSize pb-2 grey">By <strong>admin</strong> | October 24th, 2019 | <strong>0 Comments</strong></p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -265,9 +311,6 @@ export default {
             color: $saffron;
             font-size: 4em;
         }
-    }
-    .store {
-        background-color: #FEF7E9;
     }
     .jumbotronAudible {
         background-image: url(../assets/img/banner.jpg);
@@ -352,6 +395,28 @@ export default {
         .my-card-info {
             width: 400px;
             height: 480px;
+        }
+    }
+    .lastArticles {
+
+        .img-lastArticles {
+            background-image: url(../assets/img/20-Tips-800x471.jpg);
+            height: 471px;
+            width: 800px;
+
+        }
+        .smallSize {
+            font-size: 0.8em;
+        }
+        .img-booklist {
+            background-image: url(../assets/img/thumb-13-2x-320x202.jpg);
+            height: 202px;
+            width: 320px;
+        }
+        .img-travel {
+            background-image: url(../assets/img/thumb-08-2x-320x202.jpg);
+            height: 202px;
+            width: 320px;
         }
     }
 </style>
