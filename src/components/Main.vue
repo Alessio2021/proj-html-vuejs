@@ -72,10 +72,58 @@
             <div class="row">
                 <div class="col-6">
                     <h2 class="fontNewYorkTimes">What The Crities Say</h2>
-                    <p class="text-uppercase">Testimonials from around the world</p>
+                    <p class="text-uppercase text-lagoon">Testimonials from around the world</p>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-6 d-flex justify-content-end align-items-center">
                     <button type="button" class="btn btn-warning text-light">Read All Testimonials</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 position-relative">
+                    <div class="reviewShowed"></div>
+                    <div class="review_my text-light p-3 position-absolute">
+                        <div class="p-5 ">
+                            <h2 class="fontNewYorkTimes">Best Author Of His Generation</h2>
+                            <hr>
+                            <h5>This book will change your prospective of life</h5>
+                            <p class="pt-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias voluptatibus dolore, laboriosam assumenda culpa. Error odit explicabo illo, dicta fugiat voluptatem nihil, voluptate sapiente dolor minus deleniti ullam ea.
+                            </p>
+                            <p class="pt-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias voluptatibus dolore, laboriosam assumenda culpa. Error odit explicabo illo, dicta fugiat voluptatem nihil, voluptate sapiente dolor minus deleniti ullam ea.
+                            </p>
+                            <p class="pt-4">
+                                <strong>
+                                    <a href="https://www.nytimes.com">
+                                        <img src="../assets/img/nytimes-logo-white-xsmall.png" alt="new york times site">
+                                    </a>
+                                    Justin Kilpatrick, <span class="text-lagoon">The New York Times</span>
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="ps-5 pb-4">
+                        <div class="store p-5 text-center">
+                            <h3 class="fontNewYorkTimes">A True Masterpiece, Bravo!</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio ipsam soluta mollitia quidem repellat laboriosam illo voluptates et, nam minima aut, modi laudantium obcaecati aliquam totam tenetur aperiam saepe?</p>
+                        </div>
+                        <h5 class="pt-2 align-middle d-inline">
+                            <img class="pe-4" src="../assets/img/theguardian-xsmall.png" alt="">
+                            <span class="grey"><strong>Gerald Hendley,</strong></span> The Guardian
+                        </h5>
+                    </div>
+                    <div class="ps-5">
+                        <div class="store p-5 text-center">
+                            <h3 class="fontNewYorkTimes">A Unique View On The World</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio ipsam soluta mollitia quidem repellat laboriosam illo voluptates et, nam minima aut, modi laudantium obcaecati aliquam totam tenetur aperiam saepe?</p>
+                        </div>
+                        <h5 class="pt-2 align-middle d-inline">
+                            <img class="pe-4" src="../assets/img/globe-xsmall.png" alt="">
+                            <span class="grey"><strong>Mary Maxey,</strong></span> The Globe and Mail
+                        </h5>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,6 +138,12 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/style.scss";
+    .grey {
+        color: $suvaGray;
+    }
+    .text-lagoon {
+        color: $blueLagoon;
+    }
     .fontNewYorkTimes {
         font-family: $fontNewYorkTimes;
     }
@@ -135,6 +189,18 @@ export default {
             margin: 2em;
             padding: 0.5em 2.5em;
             background-color: $saffron;
+        }
+        .reviewShowed {
+            background-image: url(../assets/img/testimonial2-2x.jpg);
+            background-size: cover;
+            height: 650px;
+            border-radius: 0 0 100px 0;
+            filter: brightness(65%);
+        }
+        .review_my {
+            width: 90%;
+            top: 100px;
+            left: 15px;
         }
     }
 </style>
