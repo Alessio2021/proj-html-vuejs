@@ -189,17 +189,47 @@
             </div>
         </section>
         <!-- more info -->
-        <section>
+        <section class="info container">
             <div class="row">
-                <div class="col">
+                <div class="col text-center py-5">
                     <h2 class="fontNewYorkTimes">Dig A Little Deeper Into Damo Vaughn</h2>
-                    <p class="text-uppercase">find out more about the author himself</p>
+                    <p class="text-uppercase text-lagoon">find out more about the author himself</p>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <div>
-                            <img src="../assets/img/box-1.jpg" alt="">
-
+                        <div class="position-relative my-card-info">
+                            <div class="img-aboutme"></div>
+                            <div class="text-info position-absolute w-100">
+                                <div class="text-center">
+                                    <h3 class="text-light py-2">About Me</h3>
+                                    <div class="infoHr"></div>
+                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="position-relative my-card-info">
+                            <div class="img-lastbook"></div>
+                            <div class="text-info position-absolute w-100">
+                                <div class="text-center">
+                                    <h3 class="text-light py-2">My Latest Book</h3>
+                                    <div class="infoHr"></div>
+                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="position-relative my-card-info">
+                            <div class="img-signing"></div>
+                            <div class="text-info position-absolute w-100">
+                                <div class="text-center">
+                                    <h3 class="text-light py-2">Book Signing</h3>
+                                    <div class="infoHr"></div>
+                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -298,6 +328,30 @@ export default {
         background-image: url(../assets/img/banner-2.jpg);
         .subscriberPadding {
             padding: 7em 0;
+        }
+    }
+    .info {
+        .img-aboutme {
+            background-image: url(../assets/img/box-1.jpg);
+            height: 100%;
+            border-radius: 0 0 100px 0;
+            filter: brightness(65%);
+        }
+        .img-lastbook {
+            background-image: url(../assets/img/box-4.jpg);
+            height: 100%;
+            border-radius: 0 0 100px 0;
+            filter: brightness(65%);
+        }
+        .img-signing {
+            background-image: url(../assets/img/box-3.jpg);
+            height: 100%;
+            border-radius: 0 0 100px 0;
+            filter: brightness(65%);
+        }
+        .my-card-info {
+            width: 400px;
+            height: 480px;
         }
     }
 </style>
