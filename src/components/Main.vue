@@ -1,7 +1,7 @@
 .<template>
     <main>
         <!-- meet The Author -->
-        <section class="meetTheAuthor container my-5">
+        <section id="about-me" class="meetTheAuthor container my-5">
             <div class="row">
                 <div class="col text-center">
                     <h4 class="signature">More About Damon Vaughn</h4>
@@ -11,26 +11,26 @@
             </div>
         </section>
         <!-- stores -->
-        <section class="store">
+        <section id="shop" class="store">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-3">
-                        <a href="#">
+                        <a href="http://www.ebay.it">
                             <img src="../assets/img/ebay-logotan-2x-200x66.png" alt="">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="#">
+                        <a href="http://www.audible.it/">
                             <img src="../assets/img/audible-logotan-2x-200x66.png" alt="">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="#">
+                        <a href="http://www.barnesandnoble.com">
                             <img src="../assets/img/bb-logotan-2x-200x66.png" alt="">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="#">
+                        <a href="http://www.amazon.it/">
                             <img src="../assets/img/kindlefire-logotan-2x-200x66.png" alt="">
                         </a>
                     </div>
@@ -68,7 +68,7 @@
             </div>
         </section>
         <!-- Testimonials -->
-        <section class="testimonials container py-5">
+        <section id="testimoni" class="testimonials container py-5">
             <div class="row">
                 <div class="col-6">
                     <h2 class="fontNewYorkTimes">What The Crities Say</h2>
@@ -128,7 +128,7 @@
             </div>
         </section>
         <!-- events -->
-        <section class="events py-5 store">
+        <section id="meet" class="events py-5 store">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
@@ -137,7 +137,8 @@
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-4 text-center my_card p-3">
+                    <Event />
+                    <!-- <div class="col-4 text-center my_card p-3">
                         <div>
                             <img class="w-100" src="../assets/img/event-05-400x240.jpg" alt="">
                         </div>
@@ -146,8 +147,8 @@
                             <div class="hr"></div>
                             <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
                         </div>
-                    </div>
-                    <div class="col-4 text-center my_card p-3">
+                    </div> -->
+                    <!-- <div class="col-4 text-center my_card p-3">
                         <div>
                             <img class="w-100" src="../assets/img/event-04-400x240.jpg" alt="">
                         </div>
@@ -155,7 +156,6 @@
                             <h4 class="p-3 eventTitle">Met &amp; Greet With Amanda</h4>
                             <div class="hr"></div>
                             <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
-
                         </div>
                     </div>
                     <div class="col-4 text-center my_card p-3">
@@ -167,7 +167,7 @@
                             <div class="hr"></div>
                             <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -285,8 +285,12 @@
 </template>
 
 <script>
+import Event from './Event.vue'
 export default {
-
+    name: 'Main',
+    component: {
+        Event,
+    }
 }
 </script>
 
@@ -360,12 +364,7 @@ export default {
             border: none;
         }
 
-        .hr {
-            width: 70%;
-            height: 2px;
-            background-color: rgba(0, 0, 0, 0.452);
-            margin: auto;
-        }
+
     }
     .jumbotronSub {
         background-image: url(../assets/img/banner-2.jpg);

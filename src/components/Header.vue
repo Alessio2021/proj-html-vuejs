@@ -34,43 +34,7 @@
             <span class="visually-hidden">Next</span>
         </button>
         <!-- nav -->
-        <nav>
-            <div class="row position-absolute top-0 w-100 container-fluid ">
-                <div class="col-4">
-                    <a href="#">
-                        <img class="my_img_header ms-5" src="../assets/img/author-logo-round-small.png" alt="">
-                    </a>
-                </div>
-                <div class="col-8">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">About Me</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Testimonials</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">My Blog</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Meetups</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Shop</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Contact Me</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <Navbar/>
         <!-- review -->
         <section class="review position-absolute">
             <h2 class="signature">Damon Vaughn</h2>
@@ -91,8 +55,8 @@
             </div>
             <div class="row d-flex justify-content-end">
                 <div class="col text-center">
-                    <a href="#" class="sx"><i class="fab fa-amazon"></i> Buy On Amazon</a>
-                    <a href="#" class="dx"><i class="fab fa-apple"></i> Buy On AppStore</a>
+                    <a href="http://www.amazon.it/" class="sx"><i class="fab fa-amazon"></i> Buy On Amazon</a>
+                    <a href="https://www.apple.com/it/app-store/" class="dx"><i class="fab fa-apple"></i> Buy On AppStore</a>
                 </div>
             </div>
         </section>
@@ -101,8 +65,17 @@
 </template>
 
 <script>
+import Navbar from './Navbar.vue'
 export default {
-
+    name: 'Header',
+    component: {
+        Navbar,
+    },
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 
@@ -209,6 +182,7 @@ export default {
             border-radius: 5px;
             padding: 5px;
             margin: 1em;
+            box-shadow: 0px 5px 10px #2c2e2d;
             i {
                 color: #33475B;
                 font-size: 2em;
