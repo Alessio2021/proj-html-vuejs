@@ -183,6 +183,7 @@ export default {
         left: 95%;
         z-index: 1030;
         .square-fixed {
+            cursor: pointer;
             width: 70px;
             height: 70px;
             background-color: #ffffff;
