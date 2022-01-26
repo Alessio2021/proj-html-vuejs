@@ -46,7 +46,6 @@
 <script>
 export default {
     name: 'Navbar',
-    // props: ['section', 'link'],
     data() {
         return {
             navLink: [
@@ -85,20 +84,20 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/scss/style.scss";
     li {
-            padding: 2em;
-            border-top: 3px solid rgba(0, 0, 255, 0);
-            a {
-                text-decoration: none;
-                color: white;
-            }
+        padding: 2em;
+        border-top: 3px solid rgba(0, 0, 255, 0);
+        a {
+            text-decoration: none;
+            color: white;
         }
-        li:hover {
-            border-top: 3px solid $saffron;
-        }
-        li:hover a{
-            color: $saffron;
-        }
+    }
+    li:hover {
+        border-top: 3px solid $saffron;
+    }
+    li:hover a{
+        color: $saffron;
+    }
 </style>

@@ -10,7 +10,8 @@
                 <h2 class="text-uppercase fontNewYorkTimes text-light">about me</h2>
                 <p class="grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos laboriosam ipsum voluptates repellat id libero distinctio quas? Quod fugit fugiat adipisci quia tempore.</p>
               </div>
-              <div class="col-4">
+                <FooterLinks />
+              <!-- <div class="col-4">
                 <h2 class="text-uppercase fontNewYorkTimes text-light">useful links</h2>
                 <ul class="link list-group grey list-inline">
                   <li class="">
@@ -29,7 +30,7 @@
                     <a class="grey text-decoration-none" href=""><i class="fas fa-chevron-right pe-3"></i>Visit My Foundation</a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <div class="col-4">
                 <h2 class="text-uppercase fontNewYorkTimes text-light">Contact info</h2>
                 <ul class="list-group grey list-inline">
@@ -69,8 +70,17 @@
 </template>
 
 <script>
+import FooterLinks from './FooterLinks.vue'
 export default {
-
+  name: 'Footer',
+  components: {
+    FooterLinks,
+  },
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>
 

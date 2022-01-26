@@ -25,6 +25,8 @@ export default {
 @import "./assets/scss/style.scss";
 
 #app {
-  overflow-x: hidden;
+  * {
+    overflow: hidden;
+  }
 }
 </style>

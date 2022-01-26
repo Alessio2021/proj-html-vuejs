@@ -1,12 +1,12 @@
 .<template>
-<div>
+<div class="row mt-5">
     <div 
         v-for="(event, index) in events"
         :key="index"
         class="col-4 text-center my_card p-3"
-        >
+    >
         <div>
-            <img class="w-100" :src="`../assets/img/${event.img}`" alt="">
+            <img class="w-100" :src="require(`../assets/img/${event.img}`)" alt="">
         </div>
         <div class="bg-light p-2">
             <h4 class="p-3 eventTitle">{{event.eventName}}</h4>
@@ -14,7 +14,9 @@
             <p class="p-3">{{event.description}}</p>
         </div>
     </div>
+
 </div>
+
 </template>
 
 <script>
@@ -48,7 +50,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/scss/style.scss";
     .hr {
         width: 70%;

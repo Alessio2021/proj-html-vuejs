@@ -136,8 +136,7 @@
                         <p class="uppercase saffron">meet the author in person</p>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <Event />
+                <Event />
                     <!-- <div class="col-4 text-center my_card p-3">
                         <div>
                             <img class="w-100" src="../assets/img/event-05-400x240.jpg" alt="">
@@ -168,7 +167,6 @@
                             <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
                         </div>
                     </div> -->
-                </div>
             </div>
         </section>
         <!-- jumbo Subscriber -->
@@ -288,7 +286,7 @@
 import Event from './Event.vue'
 export default {
     name: 'Main',
-    component: {
+    components: {
         Event,
     }
 }
@@ -368,6 +366,7 @@ export default {
     }
     .jumbotronSub {
         background-image: url(../assets/img/banner-2.jpg);
+        background-size: cover;
         .subscriberPadding {
             padding: 7em 0;
         }

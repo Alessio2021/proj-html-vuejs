@@ -68,7 +68,7 @@
 import Navbar from './Navbar.vue'
 export default {
     name: 'Header',
-    component: {
+    components: {
         Navbar,
     },
     data() {
@@ -81,7 +81,9 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/style.scss";
+
     .carousel-inner {
+        
         img {
             filter: brightness(0.40)
         }
