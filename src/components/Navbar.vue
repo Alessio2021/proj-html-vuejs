@@ -59,7 +59,7 @@ export default {
                 },
                 {
                     section: 'Testimonials',
-                    link:'#',
+                    link:'#testimoni',
                 },
                 {
                     section: 'My Blog',
@@ -67,11 +67,11 @@ export default {
                 },
                 {
                     section: 'Meetups',
-                    link:'#',
+                    link:'#meet',
                 },
                 {
                     section: 'Shop',
-                    link:'#',
+                    link:'#shop',
                 },
                 {
                     section: 'Contact Me',

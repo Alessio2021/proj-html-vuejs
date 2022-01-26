@@ -163,6 +163,11 @@ export default {
             text-decoration: none;
             color: black;
             box-shadow: 5px 10px 18px #A4D2C2;
+            transition: .5s;
+            &:hover {
+                background-color: #027986;
+                color: black;
+            }
             
         }
         a.sx{

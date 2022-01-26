@@ -1,5 +1,5 @@
 .<template>
-  <footer>
+  <footer class="overflow-hidden">
     <div class="row">
       <div class="container">
         <div class="col position-relative">
@@ -61,7 +61,7 @@
             <p class="">&copy;Copyright 2012 - 2020 | Avada Theme by <strong class="text-light">ThemeFusion</strong> | All Rights Reserved | Powered by <strong class="text-light">WordPress</strong></p>
           </div>
           <div class="cookies position-absolute">
-            <i class="fas fa-chevron-up text-light"></i>
+            <a href="#CarouselArea"><i class="fas fa-chevron-up text-light"></i></a>
           </div>
         </div>
       </div>

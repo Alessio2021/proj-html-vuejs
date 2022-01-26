@@ -82,7 +82,7 @@
                 <div class="col-7 position-relative">
                     <div class="reviewShowed"></div>
                     <div class="review_my text-light p-3 position-absolute">
-                        <div class="p-5 ">
+                        <div class="p-5 text-testimonial">
                             <h2 class="fontNewYorkTimes">Best Author Of His Generation</h2>
                             <hr>
                             <h5>This book will change your prospective of life</h5>
@@ -103,28 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
-                    <div class="ps-5 pb-4">
-                        <div class="store p-5 text-center">
-                            <h3 class="fontNewYorkTimes">A True Masterpiece, Bravo!</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio ipsam soluta mollitia quidem repellat laboriosam illo voluptates et, nam minima aut, modi laudantium obcaecati aliquam totam tenetur aperiam saepe?</p>
-                        </div>
-                        <h5 class="pt-2 align-middle d-inline">
-                            <img class="pe-4" src="../assets/img/theguardian-xsmall.png" alt="">
-                            <span class="grey"><strong>Gerald Hendley,</strong></span> The Guardian
-                        </h5>
-                    </div>
-                    <div class="ps-5">
-                        <div class="store p-5 text-center">
-                            <h3 class="fontNewYorkTimes">A Unique View On The World</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio ipsam soluta mollitia quidem repellat laboriosam illo voluptates et, nam minima aut, modi laudantium obcaecati aliquam totam tenetur aperiam saepe?</p>
-                        </div>
-                        <h5 class="pt-2 align-middle d-inline">
-                            <img class="pe-4" src="../assets/img/globe-xsmall.png" alt="">
-                            <span class="grey"><strong>Mary Maxey,</strong></span> The Globe and Mail
-                        </h5>
-                    </div>
-                </div>
+                <Testimonials />
             </div>
         </section>
         <!-- events -->
@@ -137,36 +116,6 @@
                     </div>
                 </div>
                 <Event />
-                    <!-- <div class="col-4 text-center my_card p-3">
-                        <div>
-                            <img class="w-100" src="../assets/img/event-05-400x240.jpg" alt="">
-                        </div>
-                        <div class="bg-light p-2">
-                            <h4 class="p-3 eventTitle">Chicago Book Signing</h4>
-                            <div class="hr"></div>
-                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-4 text-center my_card p-3">
-                        <div>
-                            <img class="w-100" src="../assets/img/event-04-400x240.jpg" alt="">
-                        </div>
-                        <div class="bg-light p-2">
-                            <h4 class="p-3 eventTitle">Met &amp; Greet With Amanda</h4>
-                            <div class="hr"></div>
-                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center my_card p-3">
-                        <div>
-                            <img class="w-100" src="../assets/img/event-07-400x240.jpg" alt="">
-                        </div>
-                        <div class="bg-light p-2">
-                            <h4 class="p-3 eventTitle">Open Book: Dialogues</h4>
-                            <div class="hr"></div>
-                            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et, quo corrupti qui, ipsum cupiditate ipsa nihil neque nesciunt.</p>
-                        </div>
-                    </div> -->
             </div>
         </section>
         <!-- jumbo Subscriber -->
@@ -177,7 +126,7 @@
                         <h2 class="fs-1 fontNewYorkTimes text-light">Subscribe To My Newsletter</h2>
                         <p class="saffron text-uppercase">be notified about book signing tour dates</p>
                         <form action="">
-                            <input class="me-1" type="text" placeholder="Insert your email _ *">
+                            <input v-model="registerEmail" class="me-1" type="text" placeholder="Insert your email ... *">
                             <button type="button" class="btn btn-success ms-1 px-4">Subscribe</button>
                         </form>
                         <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolore possimus optio fugit ipsa quia libero voluptas earum.</p>
@@ -193,44 +142,7 @@
                     <h2 class="fontNewYorkTimes">Dig A Little Deeper Into Damo Vaughn</h2>
                     <p class="text-uppercase text-lagoon">find out more about the author himself</p>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="position-relative my-card-info">
-                            <div class="img-aboutme"></div>
-                            <div class="text-info position-absolute w-100">
-                                <div class="text-center">
-                                    <h3 class="text-light py-2">About Me</h3>
-                                    <div class="infoHr"></div>
-                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="position-relative my-card-info">
-                            <div class="img-lastbook"></div>
-                            <div class="text-info position-absolute w-100">
-                                <div class="text-center">
-                                    <h3 class="text-light py-2">My Latest Book</h3>
-                                    <div class="infoHr"></div>
-                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="position-relative my-card-info">
-                            <div class="img-signing"></div>
-                            <div class="text-info position-absolute w-100">
-                                <div class="text-center">
-                                    <h3 class="text-light py-2">Book Signing</h3>
-                                    <div class="infoHr"></div>
-                                    <p class="saffron py-2">Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <MoreInfo/>
             </div>
         </section>
         <!-- last articles -->
@@ -284,11 +196,21 @@
 
 <script>
 import Event from './Event.vue'
+import MoreInfo from './MoreInfo.vue'
+import Testimonials from './Testimonials.vue'
+
 export default {
     name: 'Main',
     components: {
         Event,
-    }
+        MoreInfo,
+        Testimonials,
+    },
+    data() {
+        return {
+            registerEmail: '',
+        }
+    },
 }
 </script>
 
@@ -350,6 +272,10 @@ export default {
             height: 650px;
             border-radius: 0 0 100px 0;
             filter: brightness(65%);
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         .review_my {
             width: 90%;
@@ -360,6 +286,11 @@ export default {
     .events {
         .my_card {
             border: none;
+            transition: 1s;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
 
@@ -393,10 +324,21 @@ export default {
         .my-card-info {
             width: 400px;
             height: 480px;
+            transition: 1s;
+            cursor: pointer;
+            .text-info {
+                transition: 1s;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:hover .text-info{
+                transform: scale(0.9);
+            }
         }
     }
     .lastArticles {
-
+        
         .img-lastArticles {
             background-image: url(../assets/img/20-Tips-800x471.jpg);
             height: 471px;
